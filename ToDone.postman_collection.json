@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "cbcfb411-58cc-4956-8c23-62d56c408e55",
+		"name": "ToDone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29779247"
+	},
+	"item": [
+		{
+			"name": "Get Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/gettask/m",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"gettask",
+						"m"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"NewTask\",\r\n    \"due_date\": \"9/16/23\",\r\n    \"user\": \"m\"   \r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/addtask",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"addtask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"NewTask\",\r\n    \"due_date\": \"9/16/23\",\r\n    \"user\": \"m\"   \r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/updatetask",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"updatetask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"NewTask\",\r\n    \"due_date\": \"9/16/23\",\r\n    \"user\": \"m\"   \r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/updatetask",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"updatetask"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
